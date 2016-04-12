@@ -1,0 +1,19 @@
+!.gitkeep
+
+#there is no need to store the auto generated files in git
+all.css
+bundle.js
+all.min.js
+all.js
+
+#the bower and node modules are decoupled components of this app.. jury is out on whether to keep a copy in our git repo
+bower_components
+node_modules
+
+#ide files ignore
+.idea/
+
+#there is no need to store the selenium binary nor test results in git
+testing/bin
+testing/log
+testing/reports
