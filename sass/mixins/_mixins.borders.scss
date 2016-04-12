@@ -1,0 +1,14 @@
+/* Border radius */
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+/* Border radius */
+@mixin border-general-widget() {
+	@include  border-radius($radiusSmall);
+	@include shadow-bottom();
+	border: solid $borderWidthMain $midGrey;
+}

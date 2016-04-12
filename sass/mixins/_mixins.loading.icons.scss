@@ -1,0 +1,21 @@
+@mixin loadingPositionDims(){
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 400px;
+	height: 300px;
+	@include align-centered();
+	margin-top: 5%;
+}
+
+@mixin loadingIcon1(){
+	background-image:url('/public/images/gifs/loading/loading-icon-1.gif');
+	@include loadingPositionDims();
+}
+@mixin loadingIcon2(){
+	background-image:url('/public/images/gifs/loading/loading-icon-2.gif');
+	@include loadingPositionDims();
+}
+@mixin loadingIcon3(){
+	background-image:url('/public/images/gifs/loading/loading-icon-3.gif');
+	@include loadingPositionDims();
+}

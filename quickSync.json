@@ -1,0 +1,55 @@
+{
+  "folders_to_watch": [
+    "app/",
+    "config/",
+    "public/bower_components",
+    "public/images",
+    "jsToCompile",
+    "sass/",
+    "swig/"
+  ],
+  "run_on_events" :[
+    "change", "unlink"
+  ],
+
+  "release_commands":{
+    "live": [
+      "npm install",
+      "bower install -f"
+    ],
+    "dev":[]
+  },
+
+  "developers" : {
+
+    "eric" : {
+      "localPath"     : "/some/path/not/required/for/no/rsync/",
+      "remote"        : "eric@8.8.8.8",
+      "remote_port"   : "22",
+      "serverPath"    : "/var/node/some/other/path/",
+      "platform"      : "mac",
+      "notifier"      : {
+        "on"   : true,
+        "style": "WindowsBalloon",
+        "time" : 2500,
+        "sound": false
+      },
+      "rsync"         : false
+    }
+  },
+
+  "rsync_ignores": {
+    "global" 	: [
+      ".idea*",
+      "*.git*",
+      "node_modules/*",
+      "bin",
+      "log",
+      "mmmagic/*"
+    ],
+    "windows"	: [
+    ],
+    "mac"		: [
+    ]
+  }
+}

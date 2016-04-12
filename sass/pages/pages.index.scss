@@ -1,0 +1,228 @@
+/* TO CHANGE HEADER SEE widgets.header.scss*/
+
+@font-face {
+  font-family: Alcubierre;
+  src: url(/public/fonts/Alcubierre.otf);
+}
+
+.cookie {
+  color: black;
+  font-family: $baseFontFamily;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 0 5px;
+  }
+  a.dismiss {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+.index-page {
+  color: white;
+  font-size: 16px;
+  .section-one {
+    background-image: url("/public/images/jpg/above-adventure-aerial-air.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    background-position: 80% 10%;
+    text-align: center;
+    color: white;
+    overflow: auto;
+    .main-cta {
+      h1 {
+        font-family: $secondFontFamily;
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: 4px;
+      }
+      h2 {
+        font-family: $secondFontFamily;
+        font-size: 2em;
+        letter-spacing: 2px;
+      }
+      p {
+        line-height: 1.75;
+      }
+      padding: 10% 0;
+      a {
+        text-decoration: none;
+      }
+      .btn {
+        display: block;
+        padding: 20px 10px;
+        width: 250px;
+        margin: 10px auto;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 0;
+        border: 3px solid white;
+        background-color: rgba(37,44,63,0.7);
+        font-weight: bolder;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          background-color: white;
+          color: $blue;
+        }
+      }
+      p {
+        padding: 10px 0;
+      }
+      a.social-login-index {
+        display: inline-block;
+        padding: 10px;
+        width: 120px;
+        margin-bottom: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      .facebook-blue {
+        background-color: $facebookBlue;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          background-color: rgba(37,44,63,0.7);
+        }
+      }
+      .google-red {
+        background-color: $googleRed;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          background-color: rgba(37,44,63,0.7);
+        }
+      }
+    }
+    .index-wishes {
+      max-height: 300px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .card-outer {
+        width: 250px;
+        cursor: pointer;
+        display: inline-block;
+        background-color: rgba(241,241,241,0.3);
+        padding: 10px;
+        text-align: center;
+        margin: 20px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        &:hover {
+          background-color: white;
+          color: $blue;
+        }
+        .wish-index-head {
+          display: block;
+          text-align: center;
+          margin-bottom: 10px;
+          img {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .wish-for {
+            display: inline-block;
+            margin: 0 0 0 20px;
+            padding: 0;
+          }
+        }
+        img {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        h3 {
+          display: block;
+          margin-top: 20px;
+        }
+        nicelink {
+          display: block;
+        }
+
+      }
+
+    }
+  }
+  .section-two {
+    font-family: $secondFontFamily;
+    text-align: center;
+    padding: 40px 0 5%;
+    color: $blue;
+    min-height: 80vh;
+    h2 {
+      font-size: 4em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 4px;
+    }
+    .what-is-geenee {
+      margin-bottom: 40px;
+      padding: 0 15px;
+    }
+    p {
+      font-family: $baseFontFamily;
+      line-height: 1.75;
+    }
+    h3 {
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    img {
+      border-radius: 50%;
+      border: 5px solid $blue;
+    }
+  }
+  .section-three {
+    background-color: $blue;
+    padding: 40px 0 5%;
+    text-align: center;
+    font-family: $secondFontFamily;
+    min-height: 30vh;
+    h2 {
+      font-size: 4em;
+      letter-spacing: 4px;
+    }
+    p {
+      font-family: $baseFontFamily;
+      line-height: 1.75;
+    }
+    .social-links {
+      display: inline-block;
+      font-size: 40px;
+      border-radius: 50%;
+      border: 2px solid white;
+      width: 60px;
+      height: 60px;
+      margin: 15px;
+      a {
+        color: white;
+        &:hover {
+          color: #e1e2e3;
+        }
+      }
+    }
+  }
+}
+
+

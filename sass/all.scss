@@ -1,0 +1,13 @@
+/* Bringing in the custom icon font */
+@font-face { font-family: "Ionicons"; src: url("/public/bower_components/ionicons/fonts/ionicons.eot?v=2.0.0"); src: url("/public/bower_components/ionicons/fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("/public/bower_components/ionicons/fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("/public/bower_components/ionicons/fonts/ionicons.woff?v=2.0.0") format("woff"), url("/public/bower_components/ionicons/fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg"); font-weight: normal; font-style: normal; }
+
+/* This main all.scss includes all the import managers, which in turn bring in all the modular style css sheets*/
+@import "variables/_variables.general.scss";
+@import "mixins/_importer.mixins.scss";
+
+@import "base_css/_base.importer";
+@import "bower_overrides/_bower_overrides.importer";
+@import "components/_components.importer";
+@import "widgets/_widgets.importer";
+@import "pages/_pages.importer";
+@import "dialogs/_dialogs.importer";

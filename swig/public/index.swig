@@ -1,0 +1,39 @@
+{% extends '_layout.swig' %}
+
+{% block title %}This is the index page bitches! {% endblock %}
+
+{% block main_content %}
+
+    <div class="container">
+        <div class="index">
+            <h1>Send a message</h1>
+
+            <form  novalidate action="post" method="/">
+
+                <div class="form-group">
+                    <label class="control-label">Tell us your name</label>
+                    <div class="">
+                        <input type="text" class="form-control input-text" name="name" placeholder="Your name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Let us reply to you</label>
+                    <div class="">
+                        <input type="email" class="form-control input-text" name="email" placeholder="Your contact email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">What is your message</label>
+                    <div class="">
+                        <textarea ng-model="form_data.message" name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btnSecondary">Send</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

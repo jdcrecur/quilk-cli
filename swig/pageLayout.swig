@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock %} | {[siteDetails.siteName]}</title>
+
+	<meta content="text/html; charset=utf-8" name="Content-Type">
+	<meta name="ROBOTS" content="ALL,INDEX,FOLLOW" />
+	<meta name="distribution" content="Global" />
+	<meta content="en-GB" name="Content-language">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#122c3f">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#122c3f">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#122c3f">
+
+
+	<!-- OG tags: these are the tags that facebook etc read when this site is shared -->
+	<meta property="og:title" content="{% block og_title %}The default...{% endblock %}"/>
+	<meta property="og:description" content="{% block og_description %}{% endblock %}"/>
+	<meta property="og:image" content="{% block og_image %}{% endblock %}"/>
+
+
+	<!-- The viewport meta tag is read by the browser for scale -->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport">
+	<meta name="description" content="{% block og_description %}{% endblock %}">
+
+	{% include 'headerScripts.swig' %}
+	{% include 'headerCSS.swig' %}
+
+	{% block customHeadContent %}{% endblock %}
+
+</head>
+<body class="{% block bodyClass %}{% endblock %}" >
+	{% block content %}
+		{# The main body of the page to go here #}
+	{% endblock %}
+</body>
+</html>

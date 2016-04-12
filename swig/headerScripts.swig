@@ -1,0 +1,11 @@
+{# Internal scripts only (best get our script loaded before getting anyone elses crap in) #}
+{% set scripts = ['/browserify/bundle.js','/js/all.min.js']%}
+{% for script in scripts %}     <script type="text/javascript" src="{[ script ]}"></script>
+{% endfor %}
+
+{# External scripts only #}
+{% set scripts = [
+    '//platform.twitter.com/widgets.js'
+] %}
+{% for script in scripts %}     <script type="text/javascript" src="{[ script ]}"></script>
+{% endf

@@ -1,0 +1,182 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 $footerHeight; /* bottom = footer height */
+}
+
+html, body{
+	font-family: $baseFontFamily;
+	font-size: $fontSizeNormal;
+	color: $fontColourNormal;
+	font-weight: normal;
+	background-color: #F1F1F1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*min-height: 100vh;
+	display: flex;
+	flex-direction: column;*/
+}
+
+a{
+	color: $blue;
+}
+
+h1{
+	font-size: $fontSizeExtraLarge;
+}
+h2{
+	font-size: $fontSizeLarge;
+}
+h3{
+	font-size: $fontSizeMedium;
+}
+h4{
+	font-size: $fontSizeNormal;
+}
+h5{
+	font-size: $fontSizeSmall;
+}
+
+strong{
+	font-weight: 600;
+}
+
+/**
+	Font sizes
+**/
+.small-font{
+	font-size: $fontSizeSmall;
+}
+.medium-font{
+	font-size: $fontSizeNormal;
+}
+.large-font{
+	font-size: $fontSizeLarge;
+}
+.extra-large-font{
+	font-size: $fontSizeLarge;
+}
+
+
+/**
+	Text alignments
+**/
+.text-align-center, .text-align-centre, .center{
+	text-align: center;
+}
+.text-align-left{
+	text-align: left;
+}
+.text-align-right{
+	text-align: right;
+}
+
+/**
+	Float css
+**/
+.clearBoth{
+	clear: both;
+}
+
+/**
+	Cursors
+**/
+.hand{
+	cursor: pointer;
+}
+
+/**
+	Visibility
+**/
+.hide{
+  	display: none;
+}
+.inline, .inline-block{
+	display:inline-block;
+}
+
+.block {
+	display: block;
+	height: 100%;
+}
+
+/**
+	Width settings
+**/
+.width-25-percent{
+	width: 25%
+}
+.width-50-percent{
+	width: 50%
+}
+.width-75-percent{
+	width: 75%
+}
+.width-100-percent{
+	width: 100%
+}
+
+
+.link{
+	color: $blue;
+	cursor: pointer;
+}
+.link:hover{
+	color: $linkColourHover;
+}
+
+.align-top{
+	vertical-align: top;
+}
+
+
+.quote:before, .quote:after {
+	color: $midGrey;
+	font-size: 3em;
+	line-height: 0.1em;
+	margin-right: 0.10em;
+	vertical-align: -0.4em;
+}
+.quote:before{
+	content: open-quote;
+}
+.quote:after{
+	content: close-quote;
+}
+
+button {
+	cursor: pointer;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+.clear {
+	clear: both;
+}
+
+/* typically used to prevent bootstrap from float tings  */
+.no-float{
+	float: none !important;
+}
+
+/*IPHONE5 FIX THAT WAS CAUSING CONTENT TO BE OFF CENTER (ADDED 01-02-2016)*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+	html,
+	body{
+		width:100%;
+		overflow-x:hidden;
+	}
+
+}
