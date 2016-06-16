@@ -1,4 +1,4 @@
-{% extends '../pageLayout.swig' %}
+{% extends '../pageLayout.njk' %}
 
 {% block content %}
     <div class="wrapper {% block wrappingClass %}{% endblock %}">
@@ -6,6 +6,6 @@
         {% block main_content %}{% endblock %}
     </div>
     {# include the public footer #}
-    {% include 'snippets/footer.swig' %}
+    {% include './snippets/footer.njk' %}
 
 {% endblock %}
