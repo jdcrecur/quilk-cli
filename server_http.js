@@ -13,9 +13,10 @@ var express			= require('express'), /* the html middleware */
 	jsonOutput		= require('./app/middleware/jsonOutput.js'), /* unify the json output */
 	mongoose		= require('mongoose'), /* ODM for mongo, makes life very easy */
 	morgan			= require('morgan'), /* morgan is a logging tool */
-	path			= require('path'), /* NodeJS tool, used in this script to determin the static routes */
+    passport		= require('passport'),
+    path			= require('path'), /* NodeJS tool, used in this script to determin the static routes */
 	session			= require('express-session'), /* Session data, similar to php sessions */
-	swig			= require('swig'), /* The templating engine, a direct nodejs port of the most popular php tpl engine, Twig */
+    nunjucks		= require('nunjucks'), /* The templating engine, a direct nodejs port of the most popular php tpl engine, Twig */
 	site_settings	= require('./config/site'), /* The app's details, this is also included globally to the template engine */
 	toolbox			= require('./app/utils/toolbox'); /* Last but not least, our own custom toolbox */
 
@@ -32,7 +33,7 @@ log = function log( a ){
  */
 GLOBAL.site = {
 	appRoot : __dirname,
-	port : 8884
+	port : 8870
 };
 
 /**
@@ -74,7 +75,7 @@ app.use(session({
 	}
 }));
 
-//hook in the rest of the passport shtoof
+// //hook in the rest of the passport shtoof
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash()); // use connect-flash for flash messages stored in session
@@ -92,19 +93,17 @@ app.locals.GLOBAL = GLOBAL;
 /**
  * CONFIGURE THE TEMPLATING ENGINE
  */
-app.engine('swig', swig.renderFile); //use swig for html files
-app.set('view engine', 'swig');
-app.set('views', __dirname + '/swig'); //set the base path to the views
-// Swig will cache templates for you, but you can disable
-// that and use Express's caching instead, if you like:
-app.set('view cache', false);
-// To disable Swig's cache, do the following:
-// NOTE: You should always cache templates in a production environment.
-// Don't leave both of these to `false` in production!
-swig.setDefaults({
-	cache: false,
-	/* this is altering the default delimeters to function with AngularJs. As AngJS uses {{ somevar }} might as well change the swig's delimters to something else.*/
-	varControls: ['{[',']}']
+nunjucks.configure('views', {
+    autoescape: true,
+    express: app,
+    tags: {
+        blockStart: '{%',
+        blockEnd: '%}',
+        variableStart: '{[',
+        variableEnd: ']}',
+        commentStart: '{#',
+        commentEnd: '#}'
+    }
 });
 
 
@@ -122,7 +121,7 @@ app.use(function(req, res, next){
 	res.status(404);
 	// respond with html page
 	if (req.accepts('html')) {
-		res.render('public/404.swig', { url: req.url });
+		res.render('public/404.html', { url: req.url });
 		return;
 	}
 	// respond with json

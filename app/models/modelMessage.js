@@ -5,7 +5,7 @@ var messagesSchema = mongoose.Schema({
     message: String,
     name: String,
     email: String,
-    input_date: date
+    input_date: Date
 });
 
 // create the model for users and expose it to our app

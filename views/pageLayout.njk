@@ -26,15 +26,15 @@
 
 	<!-- The viewport meta tag is read by the browser for scale -->
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport">
-	<meta name="description" content="{% block og_description %}{% endblock %}">
+	<meta name="description" content="{% block meta_description %}{% endblock %}">
 
-	{% include 'headerScripts.swig' %}
-	{% include 'headerCSS.swig' %}
+	{% include './headerScripts.njk' %}
+	{% include './headerCSS.njk' %}
 
 	{% block customHeadContent %}{% endblock %}
 
 </head>
-<body class="{% block bodyClass %}{% endblock %}" >
+<body class="{% block bodyClass%}{% endblock %}" >
 	{% block content %}
 		{# The main body of the page to go here #}
 	{% endblock %}

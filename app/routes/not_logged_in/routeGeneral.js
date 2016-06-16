@@ -1,5 +1,6 @@
 // app/routes/not_logged_in/general.js
-var formValidator	= require( GLOBAL.site.appRoot + '/app/utils/formValidator'),
+var authenticated = require( GLOBAL.site.appRoot + '/app/utils/authenticated' ),
+    formValidator	= require( GLOBAL.site.appRoot + '/app/utils/formValidator'),
 	queryMessages = require( GLOBAL.site.appRoot + '/app/queries/queryMessages');
 
 
@@ -8,7 +9,7 @@ module.exports = function( app ) {
 
 	// the index page from a get request
 	app.get('/', authenticated.no, function(req, res) {
-		res.render('public/index.swig'); // load the index.swig file which extends the pageLayout.swig
+		res.render('public/index.njk'); // load the index.swig file which extends the pageLayout.swig
 	});
 
 	//the index page with handling a post, the validator simply sets a success to true or false as well as which individuals failed too

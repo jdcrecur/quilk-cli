@@ -6,7 +6,7 @@
     "public/images",
     "jsToCompile",
     "sass/",
-    "swig/"
+    "views/"
   ],
   "run_on_events" :[
     "change", "unlink"
@@ -21,20 +21,19 @@
   },
 
   "developers" : {
-
-    "eric" : {
-      "localPath"     : "/some/path/not/required/for/no/rsync/",
-      "remote"        : "eric@8.8.8.8",
-      "remote_port"   : "22",
-      "serverPath"    : "/var/node/some/other/path/",
-      "platform"      : "mac",
+    "john" : {
+      "localPath"     : "/cygdrive/d/Work/baseNodeApp/",
+      "remote"        : "john@54.229.164.59",
+      "remote_port"   : "44",
+      "serverPath"    : "/var/node/baseNode/",
+      "platform"      : "windows",
       "notifier"      : {
         "on"   : true,
         "style": "WindowsBalloon",
         "time" : 2500,
         "sound": false
       },
-      "rsync"         : false
+      "rsync"         : true
     }
   },
 
