@@ -65,7 +65,7 @@ app.use( compression() );	//auto compress the output to the client
 
 // configuration ===============================================================
 var configDB = require('./config/database.js');
-mongoose.connect(configDB.url); // connect to our database
+mongoose.connect(configDB.url, configDB.options); // connect to our database
 
 //Giving the app use of sessions and storing session data in a redis store for persistent storage after app restart
 app.use(session({
@@ -121,7 +121,7 @@ app.use(function(req, res, next){
 	res.status(404);
 	// respond with html page
 	if (req.accepts('html')) {
-		res.render('public/404.html', { url: req.url });
+		res.render('public/404.njk', { url: req.url });
 		return;
 	}
 	// respond with json
