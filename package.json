@@ -1,0 +1,28 @@
+{
+  "name": "quilk-cli",
+  "version": "1.0.0",
+  "description": "A skeleton node js app builder",
+  "main": "index.js",
+  "bin": {
+    "quilk-cli": "quilk_cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://johnc1984@github.com/johnc1984/baseNodeApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnc1984/baseNodeApp/issues"
+  },
+  "homepage": "https://github.com/johnc1984/baseNodeApp#readme",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "fs-extra": "^2.0.0",
+    "inquirer": "^3.0.6",
+    "jdc-node-cliarg-reader": "^1.1.1"
+  }
+}
