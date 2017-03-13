@@ -1,4 +1,4 @@
-# TITANS OF MAVERICKS
+# NODE APP
 NB: All commands below assume being run from a terminal at the root of the project.
 
 ## Build requirements
@@ -7,7 +7,6 @@ Nodejs: Min. NodeJS 6.5+ (https://nodejs.org/en/)
 Also requires the following node packages after nodeJs is installed:
 ```
 npm install -g webpack
-npm install -g bower
 npm install -g quilk
 npm install -g pm2
 ```
@@ -16,7 +15,6 @@ npm install -g pm2
 Before starting you must install all app dependencies
 ```
 npm install
-bower install
 ```
 
 ## Build Process (dev)
@@ -34,7 +32,6 @@ In dev. you will likely want to keep an eye on the server logs, see the managing
 
 
 ## Build process (live)
-To build the main server file (due to the incredible short deadline server side optimization not tested):
 ```
 webpack --config webpack.config.js
 ```
@@ -104,29 +101,5 @@ This is an example proxy redirect virtual host file if running from apache. Ensu
 </VirtualHost>
 ```
 
-## Configurable options via environment variables
-Change the default port from 3010 with:
-```
-TITANS_OF_MAV_PORT
-```
-
-Change the coordinates from the default mavericks of lat: '37.491883' & lon: '-122.500277' with:
-```
-TITANS_OF_MAV_LAT
-TITANS_OF_MAV_LON
-```
-
-Change the weather units from the default of metric with (options are `imperial`, `metric`, `kelvin`): 
-```
-TITANS_OF_MAV_WEATHER_UNITS
-```
-
-Add your own specific weather api key for http://api.openweathermap.org/data/2.5/weather
-```
-TITANS_OF_MAV_WEATHER_API_KEY
-```
-
-Do not forget to restart the node app after any changes above.
-
 ## Database
-None, this app connects to a 3rd party API(s)
+None, this app does not yet connect to a database.
