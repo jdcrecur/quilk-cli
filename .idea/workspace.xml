@@ -2,57 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa4adcda-4f47-45cd-9f31-d9e021def0a8" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/.gitignore" afterPath="$PROJECT_DIR$/file-structures/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/README.md" afterPath="$PROJECT_DIR$/file-structures/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/browserify.js" afterPath="$PROJECT_DIR$/file-structures/browserify.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/config/default.json" afterPath="$PROJECT_DIR$/file-structures/config/default.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/package.json" afterPath="$PROJECT_DIR$/file-structures/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/quilk.json" afterPath="$PROJECT_DIR$/file-structures/quilk.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/js/app.js" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/package.json" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/animations/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/static_html/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/components/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/js/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/png/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/_core_loader.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/_core_loader.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/bootstrap.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/bootstrap.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/colors.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/colors.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/global-styles.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/global-styles.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/html-tags.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/html-tags.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/shapes.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/shapes.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/pages/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/jpg/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/controllers/controller_messages.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/controllers/controller_messages.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/database/json/messages.json" afterPath="$PROJECT_DIR$/file-structures/src/node_app/database/json/messages.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/database/queries/queries_messages.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/database/queries/queries_messages.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/events/all.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/events/all.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/404Handler.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/404Handler.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/authentication.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/authentication.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/httpHeaders.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/httpHeaders.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/jsonOutput.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/jsonOutput.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/logging_lib.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/logging_lib.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/routes/api/route_proxy.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/routes/api/route_proxy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/routes/views/routes_views.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/routes/views/routes_views.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/server.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/sockets/all.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/sockets/all.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/headerCSS.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/headerCSS.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/headerScripts.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/headerScripts.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/pageLayout.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/pageLayout.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/_layout.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/_layout.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/error.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/error.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/index.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/index.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/snippets/header.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/snippets/header.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/css/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/gif/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/gif/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/css/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/jpg/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/pages/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/png/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/js/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/components/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/static_html/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/animations/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/webpack.config.js" afterPath="$PROJECT_DIR$/file-structures/webpack.config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/management/install.js" afterPath="$PROJECT_DIR$/management/install-base-nodejs-app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/management/help.js" afterPath="$PROJECT_DIR$/management/help.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="GeeNee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,22 +24,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="367">
-                <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <first_editor relative-caret-position="72">
+                <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -110,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/management/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="38" />
+              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -791,7 +742,7 @@
     <entry file="file://$PROJECT_DIR$/management/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="38" />
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -812,22 +763,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="367">
-            <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="72">
+            <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
