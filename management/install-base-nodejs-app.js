@@ -34,18 +34,17 @@ inquirer.prompt([{
                     console.log( err );
                 } else {
 
-                        fs.copy(__dirname + '/../file-structures/', pwd + '/', function (err) {
+                        fs.copy(__dirname + '/../file-structures', pwd, function (err) {
                             if( err ){
                                 console.log( err )
                             } else {
                                 spacer();
-                                console.log('quilk-cli has successfully been installed a base nodjs app.');
+                                console.log( clc.bold.green('quilk-cli has successfully installed a base nodeJs app is now ready to go.'));
                                 spacer();
-                                console.log('Run npm install at the root and the src/browser_app/');
+                                console.log( clc.bold('Run "npm install" at the root of this project for the node app dependencies and the src/browser_app/ ofr hte client side dependencies'));
+                                console.log(clc.bold('Build the node app by running wepack form the root of the project.'));
+                                console.log(clc.bold('Build the browser app by running quilk from the root of the project.'));
                                 spacer();
-                                console.log('Build the node app by running wepack form the root of the project.');
-                                spacer();
-                                console.log('Build the browser app by running quilk from the root of the project.')
                             }
                         });
                 }

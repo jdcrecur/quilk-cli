@@ -2,59 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa4adcda-4f47-45cd-9f31-d9e021def0a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/quilk_cli.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/management/help.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/management/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/management/install.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/public/css/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/public/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/public/js/app.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/file-strctures/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/file-strctures/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/browserify.js" afterPath="$PROJECT_DIR$/file-strctures/browserify.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/default.json" afterPath="$PROJECT_DIR$/file-strctures/config/default.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/file-strctures/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quilk.json" afterPath="$PROJECT_DIR$/file-strctures/quilk.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/js/app.js" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/package.json" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/animations/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/static_html/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/components/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/js/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/img/png/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/_core_loader.scss" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/_core_loader.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/bootstrap.scss" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/bootstrap.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/colors.scss" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/colors.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/global-styles.scss" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/global-styles.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/html-tags.scss" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/html-tags.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/core/shapes.scss" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/shapes.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/browser_app/sass/pages/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/img/jpg/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/controllers/controller_messages.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/controllers/controller_messages.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/database/json/messages.json" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/database/json/messages.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/database/queries/queries_messages.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/database/queries/queries_messages.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/events/all.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/events/all.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/lib/expressMiddleware/404Handler.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/404Handler.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/lib/expressMiddleware/authentication.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/authentication.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/lib/expressMiddleware/httpHeaders.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/httpHeaders.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/lib/expressMiddleware/jsonOutput.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/jsonOutput.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/lib/logging_lib.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/lib/logging_lib.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/routes/api/route_proxy.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/routes/api/route_proxy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/routes/views/routes_views.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/routes/views/routes_views.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/server.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/sockets/all.js" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/sockets/all.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/headerCSS.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/headerCSS.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/headerScripts.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/headerScripts.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/pageLayout.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/pageLayout.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/public/_layout.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/_layout.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/public/error.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/error.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/public/index.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/index.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/node_app/views/public/snippets/header.njk" afterPath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/snippets/header.njk" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/css/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/img/gif/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/img/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/img/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/img/gif/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/public/css/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/img/jpg/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/pages/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/img/png/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/js/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/components/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/public/static_html/.gitkeep" afterPath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/animations/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/file-strctures/webpack.config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/.gitignore" afterPath="$PROJECT_DIR$/file-structures/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/README.md" afterPath="$PROJECT_DIR$/file-structures/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/browserify.js" afterPath="$PROJECT_DIR$/file-structures/browserify.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/config/default.json" afterPath="$PROJECT_DIR$/file-structures/config/default.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/package.json" afterPath="$PROJECT_DIR$/file-structures/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/quilk.json" afterPath="$PROJECT_DIR$/file-structures/quilk.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/js/app.js" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/js/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/package.json" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/animations/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/static_html/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/components/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/js/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/png/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/_core_loader.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/_core_loader.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/bootstrap.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/bootstrap.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/colors.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/colors.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/global-styles.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/global-styles.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/html-tags.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/html-tags.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/shapes.scss" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/shapes.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/browser_app/sass/pages/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/jpg/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/controllers/controller_messages.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/controllers/controller_messages.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/database/json/messages.json" afterPath="$PROJECT_DIR$/file-structures/src/node_app/database/json/messages.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/database/queries/queries_messages.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/database/queries/queries_messages.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/events/all.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/events/all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/404Handler.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/404Handler.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/authentication.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/authentication.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/httpHeaders.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/httpHeaders.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/jsonOutput.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/jsonOutput.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/lib/logging_lib.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/lib/logging_lib.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/routes/api/route_proxy.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/routes/api/route_proxy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/routes/views/routes_views.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/routes/views/routes_views.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/server.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/server.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/sockets/all.js" afterPath="$PROJECT_DIR$/file-structures/src/node_app/sockets/all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/headerCSS.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/headerCSS.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/headerScripts.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/headerScripts.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/pageLayout.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/pageLayout.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/_layout.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/_layout.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/error.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/error.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/index.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/index.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/node_app/views/public/snippets/header.njk" afterPath="$PROJECT_DIR$/file-structures/src/node_app/views/public/snippets/header.njk" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/css/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/gif/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/img/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/gif/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/public/css/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/jpg/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/pages/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/img/png/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/core/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/js/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/components/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/src/public/static_html/.gitkeep" afterPath="$PROJECT_DIR$/file-structures/src/browser_app/sass/animations/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/file-strctures/webpack.config.js" afterPath="$PROJECT_DIR$/file-structures/webpack.config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/management/install.js" afterPath="$PROJECT_DIR$/management/install-base-nodejs-app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/management/help.js" afterPath="$PROJECT_DIR$/management/help.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="GeeNee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,11 +73,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quilk_cli.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/quilk_cli.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="367">
+                <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install-base-nodejs-app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/management/install-base-nodejs-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="41" column="110" lean-forward="false" selection-start-line="41" selection-start-column="110" selection-end-line="41" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -88,8 +109,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/management/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="54">
+              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -98,32 +119,9 @@
       <file leaf-file-name="help.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/management/help.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/management/install.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/file-strctures/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="725">
-                <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -157,9 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/public/404.njk" />
-        <option value="$PROJECT_DIR$/config/template.json" />
-        <option value="$PROJECT_DIR$/config/database.js" />
         <option value="$PROJECT_DIR$/server_http.js" />
         <option value="$PROJECT_DIR$/config/template.js" />
         <option value="$PROJECT_DIR$/quickSync.js" />
@@ -202,18 +197,21 @@
         <option value="$PROJECT_DIR$/src/node_app/views/headerCSS.njk" />
         <option value="$PROJECT_DIR$/src/node_app/views/headerScripts.njk" />
         <option value="$PROJECT_DIR$/quilk.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/management/index.js" />
-        <option value="$PROJECT_DIR$/management/help.js" />
         <option value="$PROJECT_DIR$/management/install.js" />
         <option value="$PROJECT_DIR$/file-strctures/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/management/help.js" />
+        <option value="$PROJECT_DIR$/management/install-base-nodejs-app.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/file-strctures/package.json" />
+    <package-json value="$PROJECT_DIR$/file-structures/package.json" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
@@ -259,40 +257,18 @@
               <option name="myItemId" value="baseNodeApp" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseNodeApp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="management" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baseNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baseNodeApp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="file-strctures" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baseNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baseNodeApp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="file-strctures" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,7 +423,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6374723" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4368071" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -483,6 +459,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -508,61 +487,58 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/database.js" />
-    <entry file="file://$PROJECT_DIR$/config/template.js" />
-    <entry file="file://$PROJECT_DIR$/config/site.js" />
-    <entry file="file://$PROJECT_DIR$/views/public/404.njk" />
     <entry file="file://$PROJECT_DIR$/server_http.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/nunjucks/package.json" />
     <entry file="file://$PROJECT_DIR$/quickSync.js" />
     <entry file="file://$PROJECT_DIR$/processes.json" />
     <entry file="file://$PROJECT_DIR$/quickSync.json" />
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/js/app.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/.gitignore">
+    <entry file="file://$PROJECT_DIR$/file-structures/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app_name/module_name/views/public/snippets/nav_heats.njk" />
     <entry file="file://$PROJECT_DIR$/src/app_name/module_name/front_end_to_compile/sass/components/rounds-navigation.scss" />
     <entry file="file://$PROJECT_DIR$/src/app_name/module_name/front_end_to_compile/sass/components/header.scss" />
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/package.json">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/global-styles.scss">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/sass/core/global-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/sass/animations/.gitkeep">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/sass/animations/.gitkeep">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/browserify.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/browserify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/colors.scss">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/sass/core/colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="6" />
@@ -570,7 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/bootstrap.scss">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/sass/core/bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
@@ -579,14 +555,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app_name/module_name/lib/proxy_interface.js" />
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/events/all.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/events/all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/lib/logging_lib.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/lib/logging_lib.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -594,7 +570,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/jsonOutput.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/jsonOutput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="32" />
@@ -602,14 +578,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/controllers/controller_messages.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/controllers/controller_messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/database/queries/queries_messages.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/database/queries/queries_messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
@@ -617,7 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/sockets/all.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/sockets/all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
@@ -625,7 +601,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/database/json/messages.json">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/database/json/messages.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
@@ -633,7 +609,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/html-tags.scss">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/sass/core/html-tags.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
@@ -641,7 +617,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/browser_app/sass/core/_core_loader.scss">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/browser_app/sass/core/_core_loader.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -649,7 +625,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/routes/views/routes_views.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/routes/views/routes_views.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
@@ -657,7 +633,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/lib/expressMiddleware/authentication.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/lib/expressMiddleware/authentication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="23" />
@@ -665,7 +641,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/routes/api/route_proxy.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/routes/api/route_proxy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -681,7 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/headerScripts.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/headerScripts.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
@@ -689,7 +665,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/headerCSS.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/headerCSS.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
@@ -697,7 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/public/index.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/public/index.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
@@ -705,7 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/server.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
@@ -713,7 +689,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/pageLayout.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/pageLayout.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
@@ -721,7 +697,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/public/snippets/header.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/public/snippets/header.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
@@ -729,7 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/public/_layout.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/public/_layout.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -737,7 +713,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/src/node_app/views/public/error.njk">
+    <entry file="file://$PROJECT_DIR$/file-structures/src/node_app/views/public/error.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
@@ -745,7 +721,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/config/default.json">
+    <entry file="file://$PROJECT_DIR$/file-structures/config/default.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="14" />
@@ -753,7 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/file-structures/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -761,18 +737,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/package.json">
+    <entry file="file://$PROJECT_DIR$/file-structures/quilk.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="684">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/quilk.json">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file-structures/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -785,38 +769,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file-structures/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1548">
+            <caret line="86" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1728">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/management/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="54">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/management/help.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/management/install.js">
+    <entry file="file://$PROJECT_DIR$/management/install-base-nodejs-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="41" column="110" lean-forward="false" selection-start-line="41" selection-start-column="110" selection-end-line="41" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-strctures/README.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="725">
-            <caret line="104" column="50" lean-forward="false" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
+          <first_editor relative-caret-position="367">
+            <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

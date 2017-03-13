@@ -1,14 +1,12 @@
 {
   "name": "quilk-cli",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "A skeleton node js app builder",
   "main": "index.js",
-  "bin": {
-    "quilk-cli": "quilk_cli.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": "./bin/quilk_cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://johnc1984@github.com/johnc1984/baseNodeApp.git"

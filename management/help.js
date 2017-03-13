@@ -4,7 +4,7 @@ let h = [
     [clc.bold('quilk-cli help') , 'Displays the help you are reading right now.'],
 ];
 
-console.log( clc.bold('Here is a list of the quilk_ci commands you can use:') );
+console.log( clc.bold('Here is a list of the quilk-cli commands you can use:') );
 
 for (var i = 0 ; i < h.length ; ++i){
     console.log( h[i][0] );
