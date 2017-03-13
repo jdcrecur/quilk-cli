@@ -1,0 +1,4 @@
+{% set cssFiles = [
+    '/css/app.css'
+] %}
+{% for cssFile in cssFiles %}<link href="{{  cssFile }}?{{  asset_cache }}" rel="stylesheet">{% endfor %}

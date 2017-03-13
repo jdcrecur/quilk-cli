@@ -1,0 +1,9 @@
+{
+  "site" : {
+    "site_name": "Base node application",
+    "http_port" : "3010"
+  },
+  "environment_variables" : {
+    "http_port": "APP_PORT"
+  }
+}

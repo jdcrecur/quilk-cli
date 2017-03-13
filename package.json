@@ -1,44 +1,26 @@
 {
-  "name"            : "Base.",
-  "private"         : true,
-  "version"         : "0.2.07",
-  "description"     : "Probably way too much in here, but cannot be bothered picking it apart right now :)",
-  "homepage"        : "http://www.you.com",
-  "dependencies"    : {
-    "async"                     : "0.9.0",
-    "browserify"                : "12.0.1",
-    "body-parser"               : "1.14.1",
-    "bcrypt-nodejs"             : "0.0.3",
-    "chokidar"                  : "1.4.2",
-    "connect-flash"             : "0.1.1",
-    "content-filter"            : "1.0.21",
-    "compression"               : "1.6.0",
-    "concat-files"              : "0.1.0",
-    "cookie-parser"             : "1.0.1",
-    "express"                   : "4.8.0",
-    "express-session"           : "~1.0.0",
-    "fs-extra"                  : "0.26.3",
-    "gm"                        : "1.21.1",
-    "html-entities"             : "1.2.0",
-    "htmlparser2"               : "3.9.0",
-    "html-to-text"              : "1.5.1",
-    "javascript-natural-sort"   : "0.7.1",
-    "mkdirp"                    : "0.5.1",
-    "mime"                      : "1.3.4",
-    "mongoose"                  : "4.3.4",
-    "morgan"                    : "1.0.1",
-    "nunjucks"                  : "latest",
-    "node-sass"                 : "3.3.3",
-    "node-notifier"             : "4.5.0",
-    "node-minify"               : "1.3.7",
-    "passport"                  : "0.3.2",
-    "passport-local"            : "1.0.0",
-    "passport-facebook"         : "2.1.0",
-    "passport-google-oauth"     : "1.0.0",
-    "recursive-readdir"         : "1.3.0",
-    "request"                   : "2.67.0",
-    "swig"                      : "1.4.2",
-    "striptags"                 : "2.1.0",
-    "trim"                      : "0.0.1"
+  "name": "quilk-cli",
+  "version": "0.0.5",
+  "description": "A skeleton node js app builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/quilk_cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://johnc1984@github.com/johnc1984/baseNodeApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnc1984/baseNodeApp/issues"
+  },
+  "homepage": "https://github.com/johnc1984/baseNodeApp#readme",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "fs-extra": "^2.0.0",
+    "inquirer": "^3.0.6",
+    "jdc-node-cliarg-reader": "^1.1.1"
   }
 }

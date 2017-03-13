@@ -1,0 +1,16 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.container-fluid:first-child{
+  z-index: 1;
+}
+
+.small-sub-script{
+  position:absolute;
+  top:27px;
+  left:4px;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size:medium;
+}

@@ -1,0 +1,22 @@
+/**
+  DOTS
+**/
+$dot-small: 4px;
+$dot-medium: 8px;
+$dot-large: 12px;
+
+.dot-small{
+  display: inline-block;
+  border-radius: $dot-small/2;
+  height:$dot-small; width:$dot-small;
+}
+.dot-medium{
+  display: inline-block;
+  border-radius: $dot-medium/2;
+  height:$dot-medium; width:$dot-medium;
+}
+.dot-large{
+  display: inline-block;
+  border-radius: $dot-small/2;
+  height:$dot-small; width:$dot-small;
+}

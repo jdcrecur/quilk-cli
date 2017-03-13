@@ -1,7 +1,0 @@
-// remove comment if trying to get working, could not get the thing to respect the  ignore watch and ended up inendless restart loop
-[{
-	"name"        : "GeeWishWebApp",
-	"script"      : "server.js",
-	"watch"       : true,
-	"ignore_watch" : ["public/css","cats"]
-}]
