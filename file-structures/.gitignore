@@ -1,8 +1,5 @@
-# Add any directories, files, or patterns you don't want to be tracked by version control
 !.gitkeep
 .idea/
-build/
-node_modules/
-src/acrontum/titans_of_mavericks/bower_components/
-src/acrontum/titans_of_mavericks/public/css/
-src/acrontum/titans_of_mavericks/public/js/
+/build
+/node_modules
+/public/build

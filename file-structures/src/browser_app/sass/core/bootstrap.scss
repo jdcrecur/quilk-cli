@@ -52,7 +52,7 @@ $hr-border: #ccc;
 $padding-base-vertical: 9px !default;
 $padding-base-horizontal: 14px !default;
 
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 .navbar {
     border: 0;
@@ -82,10 +82,4 @@ h4, .h4 {
     h2, .h2 { font-size: $font-size-h2-480; }
     h3, .h3 { font-size: $font-size-h3-480; }
     h4, .h4 { font-size: $font-size-h4-480; }
-}
-
-a.bullet {
-    cursor: pointer;
-    background: url('../img/bullet.png') 0 40% no-repeat;
-    padding-left: 15px;
 }

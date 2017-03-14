@@ -11,7 +11,7 @@ module.exports = {
     getAll: function(){
         return new Promise( ( resolve, reject ) => {
 
-            jsonfile.readFile( process.cwd() + '/config/auth.json', (err, data) => {
+            jsonfile.readFile( '', (err, data) => {
 
                 if( err ) reject( err );
                 else resolve( data.messages );

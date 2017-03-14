@@ -1,94 +1,38 @@
 'use strict';
-
-// Set the current environment
-let cliarg = require('jdc-node-cliarg-reader').readAll();
-global.environment = cliarg.env || 'production';
-
 // Import the goodies, or require...
-let express     = require('express'),
-    path        = require('path'),
-    morgan      = require('morgan'),
-    nunjucks    = require('nunjucks'),
+let cliarg      = require('jdc-node-cliarg-reader').readAll(),
+    express     = require('express'),
     logging     = require('lib/logging_lib'),
-    bodyParser  = require('body-parser'),
-    config      = require('config');
+    config      = require('config'),
+    site        = config.get('site'),
+    environment_variable_names = config.get('environment_variables'),
+    port        = process.env[ environment_variable_names.http_port ] || site.http_port;
 
-//get the site config data
-let site = config.get('site'),
-    environment_variable_names = config.get('environment_variables');
-
+global.environment = cliarg.env || 'production';
 
 // The express instance
 let app = express();
 
-
 // Register a global event listener
-let events = require('events');
-global.eventEmiiter = new events.EventEmitter();
-
-// Register the global cache integer
-global.asset_cache = (new Date()).getTime();
+global.eventEmiiter = new (require('events')).EventEmitter();
 
 //including global event emitters
-require('events/all.js')();
+require('events/all')();
 
-// Log it all in dev
-if( global.environment == 'development' ){
-    app.use( morgan('dev') );
-} else {
-    app.use( morgan('combined') );
-}
-
-// App user
-app.use( bodyParser.urlencoded({extended: true}) ); // support encoded bodies
-app.use( require('lib/expressMiddleware/httpHeaders')() ); // custom middlewares
-app.use( require('lib/expressMiddleware/jsonOutput')() ); // custom middlewares
-app.use( bodyParser.json() ); // support json encoded bodies
-
-//Static routes to the js and css, also the bower components
-let staticCacheHeaders = ( global.environment != 'development' )? { maxage: 86400000*60 }: {};
-app.use( '/css',                express.static( path.join( process.cwd(), '/src/public/css'), staticCacheHeaders ) );
-app.use( '/images',             express.static( path.join( process.cwd(), '/src/public/img'), staticCacheHeaders ) );
-app.use( '/js',                 express.static( path.join( process.cwd(), '/src/public/js'), staticCacheHeaders ) );
-
-
-// Set the app local vars. These are automatically picked up in the template engine
-app.locals.site_details = {
-    url: 'www.myproject.com'
-};
-
-
-// CONFIGURE THE NUNJUCKS TEMPLATING ENGINE
-nunjucks.configure( process.cwd() + '/src/node_app/views', {
-    autoescape: true,
-    express: app,
-    tags: {
-        blockStart: '{%',
-        blockEnd: '%}',
-        variableStart: '{{',
-        variableEnd: '}}',
-        commentStart: '{#',
-        commentEnd: '#}'
-    }
-});
-
-
+// Express static file and header loader
+require('server/static_file_loader')( app );
 
 // The route loader
-require('lib/server/route_loader.js')( app );
+require('server/templating_engine')( app );
 
-// Handle 404s
+// The route loader
+require('server/route_loader')( app );
+
+// Handle 404 requests
 app.use( require('lib/expressMiddleware/404Handler.js')() );
 
-//the port
-let authHttpsPort   = process.env[ environment_variable_names.http_port ] || site.http_port;
-
 //open the socket connections
-let server = require('http').Server(app);
-server.listen(authHttpsPort);
-
-let io = require('socket.io')(server);
-require('sockets/all.js')( io );
+require('sockets/all.js')( require('socket.io')( ( require('http').Server(app) ).listen(port) ) );
 
 // Let the console know the ears are open :)
-logging.info( site.site_name  + ' server listening on port: ' + authHttpsPort );
+logging.info( site.site_name  + ' server listening on port: ' + port );
