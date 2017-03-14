@@ -5,5 +5,13 @@
   },
   "environment_variables" : {
     "http_port": "APP_PORT"
+  },
+  "template_tags" : {
+    "blockStart": "{%",
+    "blockEnd": "%}",
+    "variableStart": "{{",
+    "variableEnd": "}}",
+    "commentStart": "{#",
+    "commentEnd": "#}"
   }
 }

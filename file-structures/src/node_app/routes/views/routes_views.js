@@ -1,16 +1,16 @@
 'use strict';
 
-module.exports = ( app ) => {
+// Import
+let router = require('express').Router();
 
-    /**
-     * Base/ index route.. renders the index nunjucks
-     */
-    app.get('/', (req, res) => {
-        //finally load and return the view
-        res.render('public/index.njk', {
-            data: {
-                'message': 'Hello world'
-            }
-        });
+// Get the event structure
+router.get('/', (req, res) => {
+    //finally load and return the view
+    res.render('public/index.njk', {
+        data: {
+            'message': 'Hello world'
+        }
     });
-};
+});
+
+module.exports = router;

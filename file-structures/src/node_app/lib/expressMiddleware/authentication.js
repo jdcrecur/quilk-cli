@@ -61,7 +61,7 @@ module.exports = {
         let basic = auth.basic({
                 realm: "BASIC AUTHENTICATION REQUIRED"
             }, function (username, password, callback) {
-                jsonfile.readFile( process.cwd() + '/config/auth.json', (err, auth) => {
+                jsonfile.readFile( process.cwd() + '/../../config/auth.json', (err, auth) => {
 
                     if( err ) return callback( false );
                     if( !auth.users[username] ) return callback(false);
