@@ -6,7 +6,7 @@
       "include_first": [
         "/node_modules/lodash/lodash.js",
         "/node_modules/jquery/dist/jquery.js",
-        "/js/app.js"
+        "/src/browser_app/js/app.js"
       ],
       "find_in_paths": [ "/src/browser_app/js" ],
       "target": "/public/build/js/app.js"
