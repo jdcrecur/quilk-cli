@@ -2,7 +2,7 @@
 
 A simple and quick way to setup a nodejs application ready to go with sockets, api and view routes.
 
-The proof of can only deploy a single app... if this proves useful then new formats, tpl engines etc etc will be added.
+The proof concept of can only deploy a single app... if this proves useful then new formats, tpl engines etc etc will be added.
 
 ## To install run
 ```
