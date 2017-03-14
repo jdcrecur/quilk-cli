@@ -73,11 +73,9 @@ nunjucks.configure( process.cwd() + '/src/node_app/views', {
 });
 
 
-// API
-app.use('/api/', require('routes/api/route_proxy.js'));
 
-// Views
-require('routes/views/routes_views.js')(app);
+// The route loader
+require('lib/server/route_loader.js')( app );
 
 // Handle 404s
 app.use( require('lib/expressMiddleware/404Handler.js')() );

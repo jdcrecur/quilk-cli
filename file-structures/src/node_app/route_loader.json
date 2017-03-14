@@ -1,0 +1,14 @@
+[
+  {
+    "prefix": "api",
+    "routes": [
+      "routes/api/routes_messages"
+    ]
+  },
+  {
+    "prefix": "",
+    "routes": [
+      "routes/views/routes_views"
+    ]
+  }
+]
