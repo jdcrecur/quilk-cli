@@ -15,6 +15,10 @@ This installs a sleton app pre-configured with webpack, express and nunjucks tpl
 ```
 quilk-cli install-light
 ```
+Full with eventually house everything from auth to email to event queing system to socket connection options.
+```
+quilk-cli install-full
+```
 
 Up next, preconfigured mongo database with user model and email authentication with passportjs.
 
