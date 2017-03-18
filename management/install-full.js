@@ -12,7 +12,7 @@ spacer();
 inquirer.prompt([{
     type: 'confirm',
     name: 'install',
-    message: 'Install a light base nodeJs app into "'+ pwd +'"?',
+    message: 'Install a full base nodeJs app into "'+ pwd +'"?',
     default: false
 }]).then(function (answers) {
 
@@ -34,12 +34,12 @@ inquirer.prompt([{
                     console.log( err );
                 } else {
 
-                    fs.copy(__dirname + '/../file-structures/light/', pwd, function (err) {
+                    fs.copy(__dirname + '/../file-structures/full/', pwd, function (err) {
                         if( err ){
                             console.log( err )
                         } else {
                             spacer();
-                            console.log( clc.bold.green('quilk-cli has successfully installed a light base nodeJs app is now ready to go.'));
+                            console.log( clc.bold.green('quilk-cli has successfully installed a full base nodeJs app is now ready to go.'));
                             spacer();
                             console.log( clc.bold('Run "npm install" at the root of this project for the node app dependencies and the src/browser_app/ ofr hte client side dependencies'));
                             console.log(clc.bold('Build the node app by running webpack form the root of the project.'));

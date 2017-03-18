@@ -1,0 +1,85 @@
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 1200px !default;
+$screen-lg-min: 1334px !default;
+
+$grid-gutter-width: 20px !default;
+$container-gutter-width: 30px !default;
+
+$container-sm: (720px + $container-gutter-width) !default;
+$container-md: (1140px + $container-gutter-width) !default;
+$container-lg: (1320px + $container-gutter-width) !default;
+
+$font-family-sans-serif: 'Polo11R-Buch', Helvetica, Arial, sans-serif !default;
+$headings-font-family: 'Polo11R-Krftg', Helvetica, Arial, sans-serif !default;
+$font-size-base: 15px !default;
+
+$border-radius-base:  0 !default;
+$border-radius-large: 0 !default;
+$border-radius-small: 0 !default;
+
+$font-size-h1: floor(($font-size-base * 2.7)) !default; // ~40px
+$font-size-h2: floor(($font-size-base * 2.18)) !default; // ~32px
+
+$font-size-h1-480: floor(($font-size-base * 2.18)) !default; // ~32px
+$font-size-h2-480: floor(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h3-480: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h4-480: ceil(($font-size-base * 1.25)) !default; // ~18px
+
+$headings-color: $red-gd-dark2 !default;
+$brand-primary:  $red-gd-dark2;
+
+$gray-base:    $lightgray !default;
+$gray-darker:  $gray-base !default;
+$gray-dark:    $gray-base !default;
+$gray:         $gray-base !default;
+$gray-light:   $gray-base !default;
+$gray-lighter: #fff !default; // Bootstrap uses this for backgrounds only
+
+$navbar-default-bg: $red-gd-dark2 !default;
+$navbar-height: 52px !default;
+
+$navbar-default-toggle-hover-bg:     $red-gd-dark2 !default;
+$navbar-default-toggle-icon-bar-bg:  #fff !default;
+
+$btn-default-bg: $green !default;
+$btn-default-color: #fff !default;
+$btn-primary-bg: $red-gd-dark2 !default;
+$input-border-radius: 25px !default;
+$input-border-radius-large: 25px !default;
+$hr-border: #ccc;
+
+$padding-base-vertical: 9px !default;
+$padding-base-horizontal: 14px !default;
+
+@import '../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.navbar {
+    border: 0;
+    margin-bottom: 0px;
+
+    .navbar-toggle {
+        margin: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        height: 52px;
+        top: 0;
+        bottom: 0;
+
+        border: 0;
+        color: #fff;
+    }
+}
+
+h4, .h4 {
+    color: $gray-base;
+    font-family: 'Polo11R-Leicht', Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: $screen-xs-min) {
+    h1, .h1 { font-size: $font-size-h1-480; }
+    h2, .h2 { font-size: $font-size-h2-480; }
+    h3, .h3 { font-size: $font-size-h3-480; }
+    h4, .h4 { font-size: $font-size-h4-480; }
+}

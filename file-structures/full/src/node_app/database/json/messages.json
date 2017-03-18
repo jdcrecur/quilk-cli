@@ -1,0 +1,9 @@
+{
+  "messages" : [{
+      "id" : "1",
+      "message": "Hello world! This is a simple message"
+  },{
+      "id" : "2",
+      "message": "Your typical output would be delivered from a database.. this is simple mocking data."
+  }]
+}

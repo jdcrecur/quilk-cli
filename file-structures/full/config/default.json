@@ -1,0 +1,20 @@
+{
+  "authentication": {
+    "on": true
+  },
+  "environment_variables" : {
+    "http_port": "APP_PORT"
+  },
+  "site" : {
+    "site_name": "Base node application",
+    "http_port" : "3010"
+  },
+  "template_tags" : {
+    "blockStart": "{%",
+    "blockEnd": "%}",
+    "variableStart": "{{",
+    "variableEnd": "}}",
+    "commentStart": "{#",
+    "commentEnd": "#}"
+  }
+}
