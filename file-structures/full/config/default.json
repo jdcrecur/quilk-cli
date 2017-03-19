@@ -3,11 +3,17 @@
     "on": true
   },
   "environment_variables" : {
-    "http_port": "APP_PORT"
+    "http_port": {
+      "key": "APP_PORT",
+      "default": "3010"
+    },
+    "session_secret": {
+      "key": "APP_SESSION_SECRET",
+      "default":"somethingverysecret"
+    }
   },
   "site" : {
-    "site_name": "Base node application",
-    "http_port" : "3010"
+    "site_name": "Base node application"
   },
   "template_tags" : {
     "blockStart": "{%",

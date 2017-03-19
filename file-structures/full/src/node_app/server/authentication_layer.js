@@ -1,10 +1,11 @@
 'use strict';
 
 // load all the things we need
-let LocalStrategy   = require('passport-local').Strategy;
+let passport        = require('passport'),
+    LocalStrategy   = require('passport-local').Strategy;
 
 // expose this function to our app using module.exports
-module.exports = function(passport) {
+module.exports = function( app ) {
 
     // =========================================================================
     // passport session setup ==================================================
@@ -56,4 +57,8 @@ module.exports = function(passport) {
             done(null, false, req.flash('flashMessage', genericFail));
         });
     }));
+
+    // Initializing the passport logic
+    app.use(passport.initialize());
+    app.use(passport.session());
 };

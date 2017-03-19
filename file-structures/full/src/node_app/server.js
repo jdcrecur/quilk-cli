@@ -1,12 +1,15 @@
 'use strict';
+
+// Set any missing env variables from their defaults defined in the default.json config file
+require('lib/system/set_environment_variables')();
+
 // Import the goodies, or require...
 let cliarg      = require('jdc-node-cliarg-reader').readAll(),
     express     = require('express'),
     logging     = require('lib/logging_lib'),
     config      = require('config'),
     site        = config.get('site'),
-    environment_variable_names = config.get('environment_variables'),
-    port        = process.env[ environment_variable_names.http_port ] || site.http_port;
+    process_env = config.get('environment_variables');
 
 global.environment = cliarg.env || 'production';
 
@@ -26,7 +29,7 @@ require('server/route_loader')( app );
 require('server/templating_engine')( app );
 
 //open the socket connections
-require('sockets/all.js')( require('socket.io')( ( require('http').Server(app) ).listen(port) ) );
+require('sockets/all.js')( require('socket.io')( ( require('http').Server(app) ).listen( process.env.APP_PORT ) ) );
 
 // Let the console know the ears are open :)
-logging.info( site.site_name  + ' server listening on port: ' + port );
+logging.info( site.site_name  + ' server listening on port: ' + process.env[ process_env.http_port.key ] );
