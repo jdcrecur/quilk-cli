@@ -4,12 +4,10 @@ let morgan      = require('morgan'),
     RedisStore 	= require('connect-redis')(session);
 
 module.exports = function( app ){
-    // Log it all in dev
-    if( global.environment == 'development' ){
-        app.use( morgan('dev') );
-    } else {
-        app.use( morgan('combined') );
-    }
+
+    // Log it
+    app.use( morgan( ( global.environment == 'development' ) ? 'dev' : 'combined' ) );
+
 
     // App user
     app.use( require('cookie-parser')() );
@@ -19,11 +17,12 @@ module.exports = function( app ){
     app.use( bodyParser.json() ); // support json encoded bodies
     app.use( require("connect-flash")() );
 
+    //set the session
     app.use(session({
         store: new RedisStore({
-            client: redisClient
+            client: require('lib/system/redis_client')
         }),
-        secret: process.env.USER_MANAGEMENT_SESSION_SECRET,
+        secret: process.env[ require('environment_variables.config.json')['session_secret']['key'] ],
         cookie: {
             maxAge: 1000*60*60*24
         },

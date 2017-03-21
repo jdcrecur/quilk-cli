@@ -1,0 +1,22 @@
+{
+  "environment": {
+    "key": "APP_ENVIRONMENT",
+    "default": "production"
+  },
+  "http_port": {
+    "key": "APP_PORT",
+    "default": "3010"
+  },
+  "redis_host": {
+    "key": "APP_REDIS_HOST",
+    "default": "127.0.0.1"
+  },
+  "redis_port": {
+    "key": "APP_REDIS_PORT",
+    "default": "6379"
+  },
+  "session_secret": {
+    "key": "APP_SESSION_SECRET",
+    "default": "somethingverysecret"
+  }
+}

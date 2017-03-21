@@ -1,7 +1,5 @@
 "use strict";
-let jsonfile = require('jsonfile'),
-    auth = require('http-auth'),
-    bcrypt = require('bcrypt-nodejs');
+let bcrypt = require('bcrypt-nodejs');
 
 module.exports = {
 
@@ -61,7 +59,7 @@ module.exports = {
         let basic = auth.basic({
                 realm: "BASIC AUTHENTICATION REQUIRED"
             }, function (username, password, callback) {
-                jsonfile.readFile( process.cwd() + '/../../config/auth.json', (err, auth) => {
+                require('jsonfile').readFile( process.cwd() + '/../../config/auth.json', (err, auth) => {
 
                     if( err ) return callback( false );
                     if( !auth.users[username] ) return callback(false);

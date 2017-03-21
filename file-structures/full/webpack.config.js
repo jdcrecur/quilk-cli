@@ -36,6 +36,13 @@ module.exports = {
             { test: /\.yaml$/, loader: 'yaml-loader'},
             { test: /\.(jpeg|jpg|png|svg|gif)(\?.*$|$)/, loader: 'url-loader?importLoaders=1&limit=100000'},
             { test: /\.html$/, loader: 'html'}
+        ],
+        rules: [
+            {
+                test: /\.js$/,
+                use: ["source-map-loader"],
+                enforce: "pre"
+            }
         ]
     },
     performance: {

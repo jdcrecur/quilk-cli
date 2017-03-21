@@ -1,0 +1,11 @@
+{
+  "autoescape": true,
+  "tags" : {
+    "blockStart": "{%",
+    "blockEnd": "%}",
+    "variableStart": "{{",
+    "variableEnd": "}}",
+    "commentStart": "{#",
+    "commentEnd": "#}"
+  }
+}

@@ -1,6 +1,8 @@
 'use strict';
-let env = process.env.ENV || 'development',
+let env = global.environment,
     winston = require('winston');
+
+console.log( env );
 
 let customLevels = {
     emerg: 0,
@@ -34,7 +36,7 @@ let orginalLogger = logger.log;
 
 //Extend log for Error Objects
 logger.log = (level, msg, msgObj) => {
-    var objType = Object.prototype.toString.call(msgObj);
+    let objType = Object.prototype.toString.call(msgObj);
     if (objType === '[object Error]') {
         orginalLogger.call(logger, level, msg, msgObj.toString());
     } else if (typeof(msgObj) !== 'undefined') {

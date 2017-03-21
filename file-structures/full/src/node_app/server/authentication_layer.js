@@ -2,7 +2,8 @@
 
 // load all the things we need
 let passport        = require('passport'),
-    LocalStrategy   = require('passport-local').Strategy;
+    LocalStrategy   = require('passport-local').Strategy,
+    UserModel       = require('database/models/model_user');
 
 // expose this function to our app using module.exports
 module.exports = function( app ) {
@@ -22,6 +23,7 @@ module.exports = function( app ) {
         });
     });
 
+    
     // used to deserialize the user
     passport.deserializeUser(function(id, done) {
         UserModel.findOneById( id ).then(function( user ) {
