@@ -1,7 +1,11 @@
 let cliargs = require('jdc-node-cliarg-reader').readAll();
 
-if( cliargs['install-base-nodejs-app'] ){
-    require('./install-base-nodejs-app');
-} else if( cliargs.help ){
+if( cliargs['install-light'] ){
+    require('./install-light');
+}
+else if( cliargs['install-full'] ){
+    require('./install-full');
+}
+else if( cliargs.help ){
     require( './help' );
 }

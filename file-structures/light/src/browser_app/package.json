@@ -1,0 +1,12 @@
+{
+  "name": "basenodefrontend",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "dependencies": {
+
+  },
+  "engines": {
+    "node": ">=6.5.0"
+  }
+}

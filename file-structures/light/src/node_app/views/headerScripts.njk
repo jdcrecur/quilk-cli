@@ -1,0 +1,7 @@
+{# Internal scripts only (best get our script loaded before getting anyone elses crap in) #}
+{% set scripts = ['/js/app.js']%}
+{% for script in scripts %}<script type="text/javascript" src="{{ script }}?{{ asset_cache }}"></script>{% endfor %}
+
+{# External scripts only #}
+{% set scripts = [] %}
+{% for script in scripts %}<script type="text/javascript" src="{{ script }}"></script>{% endfor %}
