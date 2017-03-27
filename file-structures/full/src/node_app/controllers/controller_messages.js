@@ -16,7 +16,7 @@ module.exports = {
                 ( ) => {
                     resolve( [] );
                 }
-            );
+            ).catch( reject );
         })
     }
 };

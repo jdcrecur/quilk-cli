@@ -1,0 +1,10 @@
+{
+  "development": {
+    "url" : "mongodb://localhost/quilk",
+    "options": {}
+  },
+  "production": {
+    "url" : "mongodb://localhost/quilk",
+    "options": {}
+  }
+}

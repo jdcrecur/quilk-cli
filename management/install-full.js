@@ -1,12 +1,12 @@
-var inquirer = require('inquirer'),
+let inquirer = require('inquirer'),
     fs = require('fs-extra'),
     pwd = process.cwd(),
     clc = require('cli-color');
 
-function spacer(  ){
+let spacer = () => {
     console.log('');
     console.log('');
-}
+};
 spacer();
 
 inquirer.prompt([{
@@ -14,7 +14,7 @@ inquirer.prompt([{
     name: 'install',
     message: 'Install a full base nodeJs app into "'+ pwd +'"?',
     default: false
-}]).then(function (answers) {
+}]).then( (answers) => {
 
     spacer();
     if( !answers.install ) {
@@ -26,15 +26,15 @@ inquirer.prompt([{
         name: 'install_confirm',
         message: 'Are you sure? This will recursively empty "'+ pwd +'" before installing!',
         default: false
-    }]).then(function ( answers ) {
+    }]).then( ( answers ) => {
         spacer();
         if( answers.install_confirm ){
-            fs.emptyDir( pwd, function (err) {
+            fs.emptyDir( pwd, (err) => {
                 if (err) {
                     console.log( err );
                 } else {
 
-                    fs.copy(__dirname + '/../file-structures/full/', pwd, function (err) {
+                    fs.copy(__dirname + '/../file-structures/full/', pwd, (err) => {
                         if( err ){
                             console.log( err )
                         } else {
@@ -51,6 +51,6 @@ inquirer.prompt([{
             });
         }
     });
-}, function (e) {
+}, (e) => {
     console.log(e)
 });

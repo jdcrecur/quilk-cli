@@ -16,19 +16,19 @@ let express     = require('express'),
 // The express instance
 let app = express();
 
-// Register a global event listener
-global.eventEmiiter = new (require('events')).EventEmitter();
-
-//including global event emitters
-require('events/all')();
-
+// Register a global event emitter and open the ears to listening out for events triggered
+global.eventEmitter = new (require('events')).EventEmitter();
+require('events/events_loader.js');
 
 // Express static file and header loader
+require('server/database_loader')( app );
 require('server/middleware_loader')( app );
 require('server/static_file_loader')( app );
 require('server/templating_engine')( app );
-require('server/authentication_layer')( app );
-require('routes/route_loader')( app );
+require('server/authentication_layer')( app, function( passport ){
+    require('routes/route_loader')( app, passport );
+} );
+
 
 //open the socket connections
 require('sockets/all.js')( require('socket.io')( ( require('http').Server(app) ).listen( process.env.APP_PORT ) ) );

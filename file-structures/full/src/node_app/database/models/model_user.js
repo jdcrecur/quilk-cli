@@ -59,14 +59,16 @@ userSchema.methods.generateHash = (password) => {
 };
 
 // checking if password is valid
-userSchema.methods.validPassword = (password) => {
+userSchema.methods.validPassword = (password, user) => {
+
+    user = user || this;
+
     try{
-        return bcrypt.compareSync(password, this.local.password);
+        return bcrypt.compareSync(password, user.local.password);
     } catch ( e ){
         return false;
     }
 };
-
 
 // create the model for users and expose it to our app
 module.exports = mongoose.model('User', userSchema);

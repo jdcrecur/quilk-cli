@@ -3,64 +3,36 @@
 // load all the things we need
 let passport        = require('passport'),
     LocalStrategy   = require('passport-local').Strategy,
-    UserModel       = require('database/models/model_user');
+    auth_controller = require('controllers/authentication/authentication_controller');
 
 // expose this function to our app using module.exports
-module.exports = function( app ) {
-
-    // =========================================================================
-    // passport session setup ==================================================
-    // =========================================================================
-    // required for persistent login sessions
-    // passport needs ability to serialize and unserialize users out of session
+module.exports = function( app, cb ) {
 
     // used to serialize the user for the session
     passport.serializeUser(function(user, done) {
-        UserModel.findOneById( user.id ).then(function( user ) {
-            done(null, user.id);
-        }, function( err ){
-            done(err, null);
-        });
+        auth_controller.serializeUser( user, done );
     });
 
-    
     // used to deserialize the user
     passport.deserializeUser(function(id, done) {
-        UserModel.findOneById( id ).then(function( user ) {
-            done(null, user);
-        }, function( err ){
-            done(err, null);
-        });
+        auth_controller.deserializeUser( id, done );
     });
 
-    // =========================================================================
-    // LOCAL LOGIN =============================================================
-    // =========================================================================
-    passport.use('login', new LocalStrategy({  passReqToCallback : true  }, function(req, username, password, done) {
+    // Wrapper for the local authentication.
+    passport.local_login = ( req, res, options, next) => {
+        passport.authenticate('local-login', options)(req, res, next);
+    };
 
-        UserModel.findOneByUsername( username ).then(function( user ){
-
-            //now check the password matches
-            bcryptLib.comparePassword(password, user.password, function(err, isPasswordMatch) {
-                if (err) {
-                    //error with bcrypt
-                    done(null, false, req.flash('flashMessage', genericFail));
-                } else if (isPasswordMatch) {
-                    //username and password match, log the user.
-                    done(null, user);
-                } else {
-                    //password missmatch
-                    done(null, false, req.flash('flashMessage', genericFail));
-                }
-            });
-
-        }, function( err ){
-            //log the error and do not login
-            done(null, false, req.flash('flashMessage', genericFail));
-        });
-    }));
+    // Local login method
+    passport.use('local-login', new LocalStrategy(
+        require( 'authentication.config.json' )['localLoginStrategyOptions'],
+        function(req, username, password, done){
+            auth_controller.login(req, username, password, done);
+    }) );
 
     // Initializing the passport logic
     app.use(passport.initialize());
     app.use(passport.session());
+
+    cb( passport );
 };
