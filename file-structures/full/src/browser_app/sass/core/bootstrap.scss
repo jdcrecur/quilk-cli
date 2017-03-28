@@ -26,8 +26,8 @@ $font-size-h2-480: floor(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h3-480: ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h4-480: ceil(($font-size-base * 1.25)) !default; // ~18px
 
-$headings-color: $red-gd-dark2 !default;
-$brand-primary:  $red-gd-dark2;
+$headings-color: $green-gd-1 !default;
+$brand-primary:  $green-gd-1;
 
 $gray-base:    $lightgray !default;
 $gray-darker:  $gray-base !default;
@@ -36,15 +36,15 @@ $gray:         $gray-base !default;
 $gray-light:   $gray-base !default;
 $gray-lighter: #fff !default; // Bootstrap uses this for backgrounds only
 
-$navbar-default-bg: $red-gd-dark2 !default;
+$navbar-default-bg: $blue-gd-light2 !default;
 $navbar-height: 52px !default;
 
-$navbar-default-toggle-hover-bg:     $red-gd-dark2 !default;
+$navbar-default-toggle-hover-bg:     $blue-gd-light2 !default;
 $navbar-default-toggle-icon-bar-bg:  #fff !default;
 
 $btn-default-bg: $green !default;
 $btn-default-color: #fff !default;
-$btn-primary-bg: $red-gd-dark2 !default;
+$btn-primary-bg: $blue-gd-mid2 !default;
 $input-border-radius: 25px !default;
 $input-border-radius-large: 25px !default;
 $hr-border: #ccc;

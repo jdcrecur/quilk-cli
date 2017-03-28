@@ -12,7 +12,7 @@ module.exports =  {
      */
     logout: ( req, res ) => {
         req.logout();
-        res.redirect('/app');
+        res.redirect('/');
     },
 
     /**
@@ -22,8 +22,6 @@ module.exports =  {
      * @param res
      */
     register: ( req, res ) => {
-        //validate the request
-
         //create the account and login
         QueriesUser.createNewUser( req.body ).then( ( user )=>{
             req.login( user, () => {
@@ -31,11 +29,9 @@ module.exports =  {
             } );
         }).catch( (e) => {
             //handle the error.
-            console.log( 'error' );
-            console.log( e );
-            res.redirect('/');
+            req.flash('errors', {error: true});  // We don't want to be mixing in copy to the controller. Just pass an error flag and let the view handle the rest.
+            res.redirect('/register');
         });
-
     },
 
     /**
@@ -53,12 +49,12 @@ module.exports =  {
         QueriesUser.findOneByLocalEmail( username ).then(function( user ){
 
             if( !user ) {
-                return done(null, false, req.flash('flashMessage', genericFail));
+                return done(null, false, req.flash('errors', true));
             }
 
             if( !user.validPassword(password, user) ){
                 //password mis-match
-                done(null, false, req.flash('flashMessage', genericFail));
+                done(null, false, req.flash('errors', true));
             } else {
                 //username and password match, log the user.
                 done(null, user);
