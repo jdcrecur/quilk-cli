@@ -39,7 +39,6 @@ module.exports = {
      */
     isAuthenticated: (req, res, next) => {
 
-        console.log('11111111');
         //they are logged in, take them to /wish/ as this is where they should be for react to kick in
         if (req.isAuthenticated()) {
 
