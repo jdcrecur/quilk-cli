@@ -1,10 +1,11 @@
 'use strict';
 
 // Import
-let router = require('express').Router();
+let router = require('express').Router(),
+    authentication = require('lib/expressMiddleware/authentication');
 
 // The login view
-router.get('/', (req, res) => {
+router.get('/', authentication.notAuthenticated, (req, res) => {
     //finally load and return the view
     res.render('public/index.njk', {
         data: {
@@ -15,7 +16,7 @@ router.get('/', (req, res) => {
 });
 
 // The register view
-router.get('/register', (req, res) => {
+router.get('/register', authentication.notAuthenticated, (req, res) => {
     res.render('public/register.njk', {
         data: {
             message: 'Enter a username and password to create an account.',

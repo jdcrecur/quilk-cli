@@ -1,5 +1,6 @@
 "use strict";
-let bcrypt = require('bcrypt-nodejs');
+let bcrypt = require('bcrypt-nodejs'),
+    routes_config = require('routes.config.json');
 
 module.exports = {
 
@@ -16,10 +17,13 @@ module.exports = {
     notAuthenticated: (req, res, next) => {
         //they are not logged in so just continue to the "next" function
         if (!req.isAuthenticated()) {
+            console.log('0000000');
             return next();
         } else {
+            console.log( req );
+            console.log( routes_config.authenticated_redirect );
             //they are logged in, take them to /wish/ as this is where they should be for react to kick in
-            return res.redirect('/admin/');
+            return res.redirect( routes_config.authenticated_redirect);
         }
     },
 
@@ -34,16 +38,19 @@ module.exports = {
      * @returns {*}
      */
     isAuthenticated: (req, res, next) => {
+
+        console.log('11111111');
         //they are logged in, take them to /wish/ as this is where they should be for react to kick in
         if (req.isAuthenticated()) {
+
             return next();
         } else {
             //if json request then this is a timeout from within the app, send 401 amd let angular handle the redirect
-            if( req.headers['x-requested-with'] == 'XMLHttpRequest' ){
+            if( String(req.headers['x-requested-with']) === 'XMLHttpRequest' ){
                 return res.status(401).send('Who you are you?');
             } else {
                 //they are not logged in so just continue to the "next" function
-                return res.redirect('/');
+                return res.redirect( routes_config.unauthenticated_redirect );
             }
         }
     },

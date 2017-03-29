@@ -1,0 +1,4 @@
+{
+  "unauthenticated_redirect" : "/",
+  "authenticated_redirect" : "/app"
+}

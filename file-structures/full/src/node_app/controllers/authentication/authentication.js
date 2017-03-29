@@ -1,6 +1,4 @@
-let QueriesUser = require('database/queries/queries_user'),
-    ModelUser = require('database/models/model_user'),
-    logging     = require('lib/logging_lib');
+const QueriesUser = require('database/queries/queries_user');
 
 module.exports =  {
 
@@ -28,6 +26,7 @@ module.exports =  {
                 res.redirect('/app');
             } );
         }).catch( (e) => {
+            global.logger.error( e );
             //handle the error.
             req.flash('errors', {error: true});  // We don't want to be mixing in copy to the controller. Just pass an error flag and let the view handle the rest.
             res.redirect('/register');
@@ -44,9 +43,7 @@ module.exports =  {
      */
     login: ( req, username, password, done ) => {
 
-        let genericFail = 'Incorrect! Try again.';
-
-        QueriesUser.findOneByLocalEmail( username ).then(function( user ){
+        QueriesUser.findOneByLocalEmail( username ).then(( user ) => {
 
             if( !user ) {
                 return done(null, false, req.flash('errors', true));
@@ -55,13 +52,14 @@ module.exports =  {
             if( !user.validPassword(password, user) ){
                 //password mis-match
                 done(null, false, req.flash('errors', true));
-            } else {
+            }
+            else {
                 //username and password match, log the user.
                 done(null, user);
             }
 
-        }, function( err ){
-            logging.error( err );
+        }, ( err ) => {
+            global.logger.error( err );
             done(null, true);
         });
     },
@@ -74,7 +72,6 @@ module.exports =  {
      */
     serializeUser: ( user, done ) => {
         QueriesUser.findOneById( user.id, ( err, user ) => {
-            console.log( err, user );
             done(err, user.id);
         } );
     },

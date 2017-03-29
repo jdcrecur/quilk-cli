@@ -1,5 +1,4 @@
 const modelUser = require('database/models/model_user'),
-      logging   = require('lib/logging_lib'),
       bcrypt    = require('bcrypt-nodejs');
 
 let userQueries = {
@@ -27,7 +26,7 @@ let userQueries = {
                 // save the user
                 newUser.save( (err, user) => {
                     if (err) {
-                        logging.error( err );
+                        global.logger.error( err );
                         reject();
                     } else {
                         // //send out an email here
@@ -66,7 +65,7 @@ let userQueries = {
                 };
 
             function error( err ){
-                logging.error( err );
+                global.logger.error( err );
                 return reject( );
             }
 

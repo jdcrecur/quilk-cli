@@ -1,13 +1,12 @@
-let morgan      = require('morgan'),
-    session     = require('express-session'),
-    bodyParser  = require('body-parser'),
-    RedisStore 	= require('connect-redis')(session);
+const morgan      = require('morgan'),
+      session     = require('express-session'),
+      bodyParser  = require('body-parser'),
+      RedisStore 	= require('connect-redis')(session);
 
 module.exports = function( app ){
 
     // Log it
-    app.use( morgan( ( global.environment == 'development' ) ? 'dev' : 'combined' ) );
-
+    app.use( morgan( ( global.environment === 'development' ) ? 'dev' : 'combined' ) );
 
     // App user
     app.use( require('cookie-parser')() );

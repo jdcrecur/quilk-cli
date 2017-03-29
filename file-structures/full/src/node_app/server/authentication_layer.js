@@ -1,9 +1,9 @@
 'use strict';
 
 // load all the things we need
-let passport        = require('passport'),
+const passport        = require('passport'),
     LocalStrategy   = require('passport-local').Strategy,
-    auth_controller = require('controllers/authentication/authentication_controller');
+    auth_controller = require('controllers/authentication/authentication');
 
 // expose this function to our app using module.exports
 module.exports = function( app, cb ) {

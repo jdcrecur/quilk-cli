@@ -22,7 +22,7 @@
       "ignorePaths" : [
         "/src/browser_app/sass/core/"
       ],
-      "find_in_path": "/src/browser_app/sass/",
+      "find_in_path": "/src/browser_app/sass/non-core/",
       "target": "/public/build/css/app.css"
     }
   ],

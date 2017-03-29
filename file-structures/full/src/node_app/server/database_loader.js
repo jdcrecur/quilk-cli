@@ -1,6 +1,5 @@
 
-let mongoose = require('mongoose'),
-    logging  = require('lib/logging_lib');
+const mongoose = require('mongoose');
 
 module.exports = (  ) => {
 
@@ -10,11 +9,11 @@ module.exports = (  ) => {
 
     let db = mongoose.connection;
     db.on('error', ( ) => {
-        logging.error('Monoose connection error:');
-        logging.error(arguments);
+        global.logger.error('Monoose connection error:');
+        global.logger.error(arguments);
     });
     db.once('open', function() {
         // we're connected!
-        logging.info( 'Mongoose connected.' );
+        global.logger.info( 'Mongoose connected.' );
     });
 };

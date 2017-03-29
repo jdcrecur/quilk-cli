@@ -1,6 +1,6 @@
 
-let express = require('express'),
-    path = require('path');
+const express = require('express'),
+      path = require('path');
 
 module.exports = function( app ){
 

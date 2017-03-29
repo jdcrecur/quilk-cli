@@ -1,6 +1,6 @@
 'use strict';
 
-let authentication_controller = require('controllers/authentication/authentication_controller');
+let authentication_controller = require('controllers/authentication/authentication');
 
 module.exports = ( app, passport ) => {
 
@@ -9,7 +9,6 @@ module.exports = ( app, passport ) => {
 
     // process the login form
     app.post('/auth/login', ( req, res, next ) => {
-
         passport.local_login( req, res, {
             successRedirect : '/app',
             failureRedirect : '/',
