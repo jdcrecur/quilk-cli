@@ -1,6 +1,6 @@
 {
   "name": "quilk-cli",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A skeleton node js app builder",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   "bin": "./bin/quilk_cli.js",
   "repository": {
     "type": "git",
-    "url": "git+https://johnc1984@github.com/johnc1984/baseNodeApp.git"
+    "url": "https://github.com/johnc1984/baseNodeApp/issues"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnc1984/baseNodeApp/issues"
   },
-  "homepage": "https://github.com/johnc1984/baseNodeApp#readme",
+  "homepage": "https://github.com/jdcrecur/quilk-cli",
   "dependencies": {
     "cli-color": "^1.2.0",
     "fs-extra": "^2.0.0",
