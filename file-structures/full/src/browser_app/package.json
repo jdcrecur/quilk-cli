@@ -4,7 +4,10 @@
   "description": "",
   "author": "",
   "dependencies": {
-
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.2.1",
+    "lodash": "4.17.4",
+    "renderjson": "^1.3.0"
   },
   "engines": {
     "node": ">=6.5.0"

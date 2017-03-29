@@ -2,18 +2,10 @@
 
 {% block title %}App Title{% endblock %}
 
-{% block customHeadContent %}<script>window.appGlobalData = 'Keep is lightweight here folks, if at all...'</script>{% endblock %}
+{% block customHeadContent %}<script>window.appGlobalData = 'Keep it lightweight here folks, if at all...'</script>{% endblock %}
 
 {% block main_content %}
-    <div>
-        <div class="container-fluid">
-            {% include './snippets/header.njk' %}
-        </div>
-
-        <div class="container-fluid">
-            <div class="row results">
-                Hello world from "src/app_name/module_name/views/public/index.njk"
-            </div>
-        </div>
+    <div class="container-fluid">
+        {% include './snippets/login.njk' %}
     </div>
 {% endblock %}

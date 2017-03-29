@@ -1,0 +1,7 @@
+{
+  "localLoginStrategyOptions": {
+    "passReqToCallback": true,
+    "usernameField": "username",
+    "passwordField": "password"
+  }
+}

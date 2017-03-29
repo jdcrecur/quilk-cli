@@ -12,11 +12,6 @@ module.exports = ( io ) => {
         io.emit('currentEventUpdate', data);
     };
 
-    let emitWeather = ( data ) => {
-        io.emit('currentWeatherUpdate', data);
-    };
-
     //these are the events emited from the node app, see the the events folder
-    global.eventEmiiter.addListener('currentEventUpdate', emitResults);
-    global.eventEmiiter.addListener('currentWeatherUpdate', emitWeather);
+    global.eventEmitter.addListener('currentEventUpdate', emitResults);
 };

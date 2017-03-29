@@ -1,0 +1,26 @@
+{% extends './_layout.njk' %}
+
+{% block title %}App Authenticated Area{% endblock %}
+
+{% block customHeadContent %}<script>window.appGlobalData = 'Keep it lightweight here folks, if at all...'</script>{% endblock %}
+
+{% block main_content %}
+    <div>
+        <div class="container-fluid">
+            {% include './snippets/header.njk' %}
+        </div>
+
+        <div class="container-fluid">
+            <div class="row dashboard-panel">
+                <div class="content">
+                    <p>Woop! You are logged in, well done!</p>
+                    <p>Your username is: <b>{{ data.username }}</b></p>
+
+                    <div>
+                        {% include './snippets/api-test.njk' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

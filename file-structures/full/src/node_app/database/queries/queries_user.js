@@ -1,6 +1,44 @@
-const modelUser = require('database/models/model_user');
+const modelUser = require('database/models/model_user'),
+      bcrypt    = require('bcrypt-nodejs');
 
 let userQueries = {
+
+    /**
+     * Create a new user mongo document
+     *
+     * @param user_data
+     * @returns {Promise}
+     */
+    createNewUser: ( user_data ) => {
+
+        return new Promise( ( resolve, reject ) => {
+            let newUser = new modelUser();
+
+            newUser.local.email    	= user_data.username;
+
+            newUser.local.password 	= newUser.generateHash(user_data.password);
+
+            newUser.local.authenticated= false;
+
+            //generate the hash then continue once received
+            bcrypt.hash(user_data.email, null, null, ( err, hash ) => {
+                newUser.hash.activate = hash;
+                // save the user
+                newUser.save( (err, user) => {
+                    if (err) {
+                        global.logger.error( err );
+                        reject();
+                    } else {
+                        // //send out an email here
+                        // global.
+
+                        //now progress to done which will also log this user in.
+                        resolve( user );
+                    }
+                });
+            });
+        } );
+    },
 
     /**
      * Checks the current database for users registered to the given email.
@@ -27,7 +65,8 @@ let userQueries = {
                 };
 
             function error( err ){
-                return reject( err );
+                global.logger.error( err );
+                return reject( );
             }
 
             userQueries.findOneByLocalEmail(email).then( ( localUser ) => {
@@ -69,9 +108,9 @@ let userQueries = {
      */
     findByFacebookEmail: ( email ) => {
         return new Promise( ( resolve, reject ) => {
-            modelUser.findOne({"facebook.email":email}, function(err, user){
+            modelUser.find({"facebook.email":email}, function(err, user){
                 if( err ) return reject( err );
-                return resolve( user );
+                return resolve( user[0] );
             });
         } );
     },
@@ -84,9 +123,9 @@ let userQueries = {
      */
     findByGoogleEmail: ( email ) => {
         return new Promise( ( resolve, reject ) => {
-            modelUser.findOne({"local.email":email}, function(err, user){
+            modelUser.find({"google.email":email}, function(err, user){
                 if( err ) return reject( err );
-                return resolve( user );
+                return resolve( user[0] );
             });
         } );
     },
@@ -99,12 +138,25 @@ let userQueries = {
      */
     findOneByLocalEmail: ( email ) => {
         return new Promise( ( resolve, reject ) => {
-            modelUser.findOne({"google.email":email}, function(err, user){
-                if( err ) return reject( err );
-                return resolve( user );
+            modelUser.find({"local.email":email}, (err, user) => {
+                if( err ) {
+                    console.log( err );
+                    return reject( err );
+                }
+                return resolve( user[0] );
             });
         } );
+    },
+
+    /**
+     * Returns a user found by id
+     *
+     * @param id
+     * @param cb Callback
+     */
+    findOneById: ( id, cb ) => {
+        modelUser.findById( id, cb);
     }
 };
 
-return userQueries;
+module.exports = userQueries;

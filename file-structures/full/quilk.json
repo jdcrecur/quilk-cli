@@ -4,8 +4,9 @@
       "name": "JS Files",
       "module": "js_find",
       "include_first": [
-        "/node_modules/lodash/lodash.js",
-        "/node_modules/jquery/dist/jquery.js",
+        "/src/browser_app/node_modules/lodash/lodash.js",
+        "/src/browser_app/node_modules/jquery/dist/jquery.js",
+        "/src/browser_app/node_modules/renderjson/renderjson.js",
         "/src/browser_app/js/app.js"
       ],
       "find_in_paths": [ "/src/browser_app/js" ],
@@ -22,7 +23,7 @@
       "ignorePaths" : [
         "/src/browser_app/sass/core/"
       ],
-      "find_in_path": "/src/browser_app/sass/",
+      "find_in_path": "/src/browser_app/sass/non-core/",
       "target": "/public/build/css/app.css"
     }
   ],

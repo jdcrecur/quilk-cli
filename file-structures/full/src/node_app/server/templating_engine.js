@@ -1,5 +1,5 @@
-let _           = require('lodash'),
-    nunjucks    = require('nunjucks');
+const _           = require('lodash'),
+      nunjucks    = require('nunjucks');
 
 module.exports = function( app ){
 
