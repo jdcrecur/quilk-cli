@@ -1,6 +1,5 @@
 "use strict";
-let bcrypt = require('bcrypt-nodejs'),
-    routes_config = require('routes.config.json');
+let routes_config = require('routes.config.json');
 
 module.exports = {
 
@@ -52,36 +51,5 @@ module.exports = {
                 return res.redirect( routes_config.unauthenticated_redirect );
             }
         }
-    },
-
-    /**
-     * Basic authentication
-     *
-     * @param req
-     * @param res
-     * @param next
-     */
-    basicAuthentication: ( req, res, next ) => {
-        let basic = auth.basic({
-                realm: "BASIC AUTHENTICATION REQUIRED"
-            }, function (username, password, callback) {
-                require('jsonfile').readFile( process.cwd() + '/../../config/auth.json', (err, auth) => {
-
-                    if( err ) return callback( false );
-                    if( !auth.users[username] ) return callback(false);
-
-                    bcrypt.compare( password, auth.users[username], (err, res) => {
-                        if( err || !res) return callback(false);
-                        return callback( true );
-                    });
-                });
-            }
-        );
-
-        // Last auth check.. basic authentication
-        basic.check(req, res, (req, res, err) => {
-            if (err) next(err);
-            else next();
-        });
     }
 };
