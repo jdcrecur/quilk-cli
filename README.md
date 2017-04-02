@@ -12,16 +12,16 @@ npm install -g quilk-cli
 
 ## To use quilk-cli
 
-This installs a sleton app pre-configured with webpack, express and nunjucks tpl engine. Plus a few other extra goodies.
+This installs a skeleton app pre-configured with webpack, express and nunjucks tpl engine. Plus a few other extra goodies.
 ```
 quilk-cli install-light
 ```
 Full with eventually house everything from auth to email to event queing system to socket connection options.
+The app is now pre-configured with user authentication. Just install, quilk and webpack it then start the app. 
+The default app will display a pretty login form, a register form then once logged in a simple api tester.
 ```
 quilk-cli install-full
 ```
-
-Up next, preconfigured mongo database with user model and email authentication with passportjs.
 
 This displays the help available for quilk-cli... although there is only these 2 commands at the moment :)
 ```

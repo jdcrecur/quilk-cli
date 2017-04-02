@@ -1,8 +1,9 @@
 {
-  "name": "basenodefrontend",
+  "name": "quilkclibrowserapp",
   "version": "1.0.0",
   "description": "",
   "author": "",
+  "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.2.1",
