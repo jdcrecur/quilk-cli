@@ -25,7 +25,7 @@ webpack --config webpack.config.js --watch
 
 To build the client side css and js
 ```
-quilk --watch
+quilk watch
 ```
 
 In dev. you will likely want to keep an eye on the server logs, see the managing pm2 instances below.
@@ -88,7 +88,7 @@ pm2 restart all
 ```
 
 ## Example apache proxy redirect vhost config file
-This is an example proxy redirect virtual host file if running from apache. Ensure that the port number matches the port of the app. In this case the default is 3010.
+This is an example proxy redirect virtual host file if running from apache2. Ensure that the port number matches the port of the app. In this case the default is 3010.
 ```
 <VirtualHost *:80>
     ServerName <your domain here>

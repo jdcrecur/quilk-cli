@@ -1,8 +1,11 @@
-
 <div class="api-test">
     <h4>Simple api GET test</h4>
     <form novalidate>
-        <input type="text"  name="route" class="" placeholder="GET: /api/...    " required autofocus>
+        <label>Base path</label>
+        <input type="text"  name="base" class=""  placeholder="Prepended to the route you enter, eg /api/user" value="/api/">
+        <label>API route</label>
+        <input type="text"  name="route" class="" placeholder="GET eg: user/get/current    " required autofocus>
+        <label>Call</label>
         <input class="btn btn-primary btn-block" type="submit" value="Run">
     </form>
 

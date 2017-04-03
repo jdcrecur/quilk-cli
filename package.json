@@ -1,6 +1,6 @@
 {
   "name": "quilk-cli",
-  "version": "0.0.11",
+  "version": "0.0.14",
   "description": "A skeleton node js app builder",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "cli-color": "^1.2.0",
     "fs-extra": "^2.0.0",
     "inquirer": "^3.0.6",
-    "jdc-node-cliarg-reader": "^1.1.1"
+    "jdc-node-cliarg-reader": "^1.1.1",
+    "lodash": "^4.17.4"
   }
 }

@@ -1,13 +1,19 @@
-var app = {
+import _ from 'lodash';
+import $ from 'jquery';
+import router from './lib/router'
 
-    init: function(){
-        window.log = function( m ){
-            console.log( m );
-        }
+let app = {
+    init:() => {
+        $(document).ready( () => {
+            app.set_globals();
+            new router();
+        } );
     },
 
-    init_loader: function( f ) {
-        $(document).ready( f );
+    set_globals: () => {
+        window.log = ( ) => {
+            _.map( arguments, console.log);
+        };
     }
 };
-app.init_loader( app.init );
+app.init();
