@@ -1,6 +1,6 @@
 {
   "name": "quilk-cli",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "description": "A skeleton node js app builder",
   "main": "index.js",
   "scripts": {
